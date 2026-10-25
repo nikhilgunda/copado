@@ -2,7 +2,7 @@
 Library                QForce
 Suite Setup            Open Browser                about:blank            chrome
 Suite Teardown         CloseAllBrowsers
-Timeout    30
+
 *** Variables ***
 *** Test Cases ***
 Home
