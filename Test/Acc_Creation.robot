@@ -1,7 +1,11 @@
 *** Settings ***
-Library    QForce
-Test Setup
-Test Teardown
+Library           QForce
+Suite Setup       Open Browser        about:blank    chrome
+Suite Teardown    CloseAllBrowsers
 *** Variables ***
 *** Test Cases ***
+Home
+    [Documentation]    Account creation
+    [Tags]             Account
+    
 *** Keywords ***
