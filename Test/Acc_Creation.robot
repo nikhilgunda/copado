@@ -8,7 +8,7 @@ Suite Teardown         CloseAllBrowsers
 Home
     [Documentation]    Account creation
     [Tags]             Account
-    GoTo               Login                       ${Login_URL}
+    GoTo               Login                       ${Login URL}
     VerifyText         Username
     TypeText           username                    ${Username}
     ClickText          Log in
@@ -19,7 +19,7 @@ Home
 Log To Console              ${MFA_needed} # When given ${MFA_needed} is true, see Log to Console keyword result
 
 IF                          ${MFA_needed}
-    ${mfa_code}=       GetOTP                      ${username}            ${secret}
+    ${mfa_code}=       GetOTP                      ${username}            ${Secret}
     TypeSecret         Verification Code           ${mfa_code}
     ClickText          Verify
     LaunchApp          sales
