@@ -14,6 +14,7 @@ Home
     ClickText          Log in
     VerifyText         Password
     TypeText           password                    ${password}
+    ClickText          Log in
     ${MFA_needed}=     Run Keyword And Return Status                      Should Not Be Equal       ${None}    ${secret}
 
 Log To Console              ${MFA_needed} # When given ${MFA_needed} is true, see Log to Console keyword result
