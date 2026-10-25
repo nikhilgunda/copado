@@ -8,7 +8,7 @@ Suite Teardown         CloseAllBrowsers
 Home
     [Documentation]    Account creation
     [Tags]             Account
-    GoTo               Login                       ${Login URL}
+    GoTo               ${Login URL}    timeout=30
     VerifyText         Username
     TypeText           username                    ${Username}
     ClickText          Log in
