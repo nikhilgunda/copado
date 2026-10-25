@@ -7,5 +7,6 @@ Suite Teardown    CloseAllBrowsers
 Home
     [Documentation]    Account creation
     [Tags]             Account
-    GoTo               Login
+    GoTo               Login url
+    
 *** Keywords ***
