@@ -8,7 +8,7 @@ Suite Teardown         CloseAllBrowsers
 Home
     [Documentation]    Account creation
     [Tags]             Account
-    GoTo               ${Login URL}    timeout=30
+    GoTo               ${Login URL}                timeout=30
     VerifyText         Username
     TypeText           username                    ${username}
     ClickText          Log in
@@ -25,18 +25,18 @@ IF                          ${MFA_needed}
     LaunchApp          sales
     VerifyText         Accounts                    anchor=contacts
     ClickText          Accounts                    anchor=contacts
-    VerifyText         New                        anchor=import
+    VerifyText         New                         anchor=import
     ClickText          New
     UseModal           on
-    TypeText           Account name               CRT3
-    PickList           rating                     warm
-    PickList           type                       prospect
-    PickList           customer priority          High
-    PickList           Active                     yes
-    ClickText          save     
+    TypeText           Account name                CRT3
+    PickList           rating                      warm
+    PickList           type                        prospect
+    PickList           customer priority           High
+    PickList           Active                      yes
+    ClickText          save
     UseModal           off
     VerifyText         Account CRT 3 created
-    
+
 
 
 
