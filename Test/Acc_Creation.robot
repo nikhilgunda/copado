@@ -10,11 +10,11 @@ Home
     [Tags]             Account
     GoTo               ${Login URL}    timeout=30
     VerifyText         Username
-    TypeText           username                    ${Username}
+    TypeText           username                    ${username}
     ClickText          Log in
     VerifyText         Password
-    TypeText           password                    ${Password}
-    ${MFA_needed}=     Run Keyword And Return Status                      Should Not Be Equal       ${None}    ${Secret}
+    TypeText           password                    ${password}
+    ${MFA_needed}=     Run Keyword And Return Status                      Should Not Be Equal       ${None}    ${secret}
 
 Log To Console              ${MFA_needed} # When given ${MFA_needed} is true, see Log to Console keyword result
 
