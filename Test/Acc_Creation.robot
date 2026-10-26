@@ -37,7 +37,22 @@ IF                          ${MFA_needed}
     ClickText          Save
     UseModal           off
     VerifyText         Account CRT 3 created
-
+    LaunchApp          Sales
+    ClickText          Accounts                    anchor=Contacts
+    VerifyText         CRT3                        anchor=Account Name 
+    ClickText          CRT3
+    ClickText          Details
+    VerifyText         Account Owner               Nikhil TestingEnv
+    VerifyText         Account Nmae                CRT3
+    VerifyText         Rating                      Warm     
+    VerifyText         Type                        Prospect
+    VerifyText         Customer Priority           High
+    VerifyText         Active                      Yes
+    VerifyText         Type                        anchor=Phone 
+    VerifyText         Phone                       anchor=Website
+    VerifyText         Website                     anchor=Account Owner
+    VerifyText         Account Owner               anchor=Account Site
+    VerifyText         Account Site                anchor=Industry   
 
 
 
