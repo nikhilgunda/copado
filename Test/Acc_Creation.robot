@@ -30,10 +30,10 @@ IF                          ${MFA_needed}
     ClickText          New
     UseModal           on
     TypeText           Account Name                CRT3
-    PickList           Rating                      warm
-    PickList           Type                        prospect
-    PickList           Customer priority           High
-    PickList           Active                      yes
+    PickList           Rating                      Warm
+    PickList           Type                        Prospect
+    PickList           Customer Priority           High
+    PickList           Active                      Yes
     ClickText          Save
     UseModal           off
     VerifyText         Account CRT 3 created
