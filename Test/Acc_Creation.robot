@@ -23,18 +23,18 @@ IF                          ${MFA_needed}
     ${mfa_code}=       GetOTP                      ${username}            ${secret}
     TypeSecret         Verification Code           ${mfa_code}
     ClickText          Verify
-    LaunchApp          sales
-    VerifyText         Accounts                    anchor=contacts
-    ClickText          Accounts                    anchor=contacts
+    LaunchApp          Sales
+    VerifyText         Accounts                    anchor=Contacts
+    ClickText          Accounts                    anchor=Contacts
     VerifyText         New                         anchor=import
     ClickText          New
     UseModal           on
-    TypeText           Account name                CRT3
-    PickList           rating                      warm
-    PickList           type                        prospect
-    PickList           customer priority           High
+    TypeText           Account Name                CRT3
+    PickList           Rating                      warm
+    PickList           Type                        prospect
+    PickList           Customer priority           High
     PickList           Active                      yes
-    ClickText          save
+    ClickText          Save
     UseModal           off
     VerifyText         Account CRT 3 created
 
